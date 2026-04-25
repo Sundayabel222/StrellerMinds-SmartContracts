@@ -13,7 +13,6 @@ import authRouter from "./routes/auth";
 import certificatesRouter from "./routes/certificates";
 import studentsRouter from "./routes/students";
 import analyticsRouter from "./routes/analytics";
-import socialSharingRouter from "./routes/social-sharing";
 import healthRouter from "./routes/health";
 
 const app = express();
@@ -75,7 +74,6 @@ app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/certificates", certificatesRouter);
 app.use("/api/v1/students", studentsRouter);
 app.use("/api/v1/analytics", analyticsRouter);
-app.use("/api/v1/social-sharing", socialSharingRouter);
 
 // ── 404 handler ───────────────────────────────────────────────────────────────
 app.use((_req: express.Request, res: express.Response) => {
